@@ -6,7 +6,7 @@ package javaapplicationfincashary;
 
 
 public class JavaApplicationFincaShary {
-    
+        
         private String str_codigo;
         private String str_nombre;
         private String str_ubicacion;

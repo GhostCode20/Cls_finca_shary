@@ -124,6 +124,11 @@ public class Frm_TrabajoShary1 extends javax.swing.JFrame {
 
         btn_guardar.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         btn_guardar.setText("Guardar");
+        btn_guardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_guardarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -401,6 +406,20 @@ public class Frm_TrabajoShary1 extends javax.swing.JFrame {
     private void txt_contactoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_contactoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_contactoActionPerformed
+
+    private void btn_guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_guardarActionPerformed
+        String nombre = txt_nombre.getText();
+        String ubicacion = txt_ubi.getText();
+        String propietario = txt_prop.getText();
+        String correo = txt_correo.getText();
+        
+        JavaApplicationFincaShary.JavaApplicationFincaShary(nombre,ubicacion,propietario,correo);
+        
+        txt_nombre.setText("");
+        txt_ubi.setText("");
+        txt_prop.setText("");
+        txt_correo.setText("");
+    }//GEN-LAST:event_btn_guardarActionPerformed
 
     /**
      * @param args the command line arguments
