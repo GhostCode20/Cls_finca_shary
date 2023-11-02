@@ -86,7 +86,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="226" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="311" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -95,9 +95,9 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="20" max="32767" attributes="0"/>
+                  <EmptySpace pref="19" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -128,18 +128,14 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
-                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                      </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="txt_cargo" min="-2" pref="167" max="-2" attributes="0"/>
-                              <Component id="txt_nitfinca" min="-2" pref="167" max="-2" attributes="0"/>
-                              <Component id="txt_contacto" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Component id="txt_correo" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Component id="txt_prop" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Component id="txt_ubi" min="-2" pref="167" max="-2" attributes="0"/>
                               <Component id="txt_nombre" min="-2" pref="167" max="-2" attributes="0"/>
-                              <Component id="txt_codigo" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Component id="txt_nit" min="-2" pref="167" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -153,41 +149,46 @@
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
+              </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="txt_codigo" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="txt_nit" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txt_nombre" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txt_contacto" min="-2" max="-2" attributes="0"/>
+                  <Component id="txt_ubi" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txt_nitfinca" min="-2" max="-2" attributes="0"/>
+                  <Component id="txt_prop" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txt_cargo" min="-2" max="-2" attributes="0"/>
+                  <Component id="txt_correo" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btn_guardar" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btn_actualizar2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btn_registrar1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="47" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="txt_codigo">
+        <Component class="javax.swing.JTextField" name="txt_nit">
           <Properties>
-            <Property name="text" type="java.lang.String" value="C&#xf3;digo"/>
+            <Property name="text" type="java.lang.String" value="Nit"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_codigoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_nitActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_nombre">
@@ -195,22 +196,22 @@
             <Property name="text" type="java.lang.String" value="Nombre"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txt_contacto">
+        <Component class="javax.swing.JTextField" name="txt_ubi">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Contacto"/>
+            <Property name="text" type="java.lang.String" value="Ubicaci&#xf3;n"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_contactoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_ubiActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txt_nitfinca">
+        <Component class="javax.swing.JTextField" name="txt_prop">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Nit de finca"/>
+            <Property name="text" type="java.lang.String" value="Propietario"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txt_cargo">
+        <Component class="javax.swing.JTextField" name="txt_correo">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Cargo"/>
+            <Property name="text" type="java.lang.String" value="Correo"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
@@ -221,7 +222,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Trabajador"/>
+            <Property name="text" type="java.lang.String" value="Finca"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btn_registrar1">
@@ -265,15 +266,9 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="txt_nombre1" min="-2" pref="156" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
-                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                                      <Component id="txt_codigo1" min="-2" pref="156" max="-2" attributes="0"/>
-                                  </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                                  <Component id="txt_codigo1" min="-2" pref="156" max="-2" attributes="0"/>
                               </Group>
                               <Component id="txt_descripcion" alignment="1" min="-2" pref="156" max="-2" attributes="0"/>
                               <Component id="txt_codtrabajo" alignment="1" min="-2" pref="156" max="-2" attributes="0"/>
@@ -292,14 +287,19 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
+                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="txt_codigo1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txt_nombre1" min="-2" max="-2" attributes="0"/>
@@ -402,17 +402,13 @@
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
-                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="txt_nombre2" min="-2" pref="167" max="-2" attributes="0"/>
-                              <Component id="jTextField1" min="-2" pref="167" max="-2" attributes="0"/>
-                              <Component id="txt_ubi" alignment="1" min="-2" pref="167" max="-2" attributes="0"/>
-                              <Component id="txt_prop" alignment="1" min="-2" pref="167" max="-2" attributes="0"/>
-                              <Component id="txt_correo" alignment="1" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Component id="txt_codigo2" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Component id="txt_contacto" alignment="1" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Component id="txt_nitfinca" alignment="1" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Component id="txt_cargo" alignment="1" min="-2" pref="167" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -422,6 +418,10 @@
                           <Component id="btn_actualizar" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="btn_guardar2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -434,15 +434,15 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
+                  <Component id="txt_codigo2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txt_nombre2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txt_ubi" min="-2" max="-2" attributes="0"/>
+                  <Component id="txt_contacto" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txt_prop" min="-2" max="-2" attributes="0"/>
+                  <Component id="txt_nitfinca" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txt_correo" min="-2" max="-2" attributes="0"/>
+                  <Component id="txt_cargo" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btn_actualizar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -455,12 +455,12 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="jTextField1">
+        <Component class="javax.swing.JTextField" name="txt_codigo2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Nit"/>
+            <Property name="text" type="java.lang.String" value="C&#xf3;digo"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_codigo2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_nombre2">
@@ -468,22 +468,22 @@
             <Property name="text" type="java.lang.String" value="Nombre"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txt_ubi">
+        <Component class="javax.swing.JTextField" name="txt_contacto">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Ubicaci&#xf3;n"/>
+            <Property name="text" type="java.lang.String" value="Contacto"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_ubiActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_contactoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txt_prop">
+        <Component class="javax.swing.JTextField" name="txt_nitfinca">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Propietario"/>
+            <Property name="text" type="java.lang.String" value="Nit de finca"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txt_correo">
+        <Component class="javax.swing.JTextField" name="txt_cargo">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Correo"/>
+            <Property name="text" type="java.lang.String" value="Cargo"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
@@ -494,7 +494,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Finca"/>
+            <Property name="text" type="java.lang.String" value="Trabajador"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btn_registrar">
